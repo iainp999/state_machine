@@ -1,0 +1,9 @@
+{
+    "name": "StateMachine",
+    "description": "Very simple state machine",
+    "autoload": {
+        "psr-0": {
+            "StateMachine": "lib/"
+        }
+    }
+}
