@@ -1,6 +1,14 @@
 {
     "name": "StateMachine",
     "description": "Very simple state machine",
+    "keywords": ["state machine"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Iain Potter"
+        }
+    ],
     "autoload": {
         "psr-0": {
             "StateMachine": "lib/"
