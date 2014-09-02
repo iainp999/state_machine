@@ -1,0 +1,16 @@
+engine:
+  initial: 'initial'
+  states:
+    - initial
+    - intermediate
+    - intermediate_other
+    - final
+  transitions:
+    - from: initial
+      to: intermediate
+    - from: initial
+      to: intermediate_other
+    - from: intermediate
+      to: final
+    - from: intermediate_other
+      to: final

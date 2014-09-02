@@ -13,5 +13,8 @@
         "psr-0": {
             "StateMachine": "lib/"
         }
+    },
+    "require": {
+        "symfony/yaml": "2.3.*"
     }
 }

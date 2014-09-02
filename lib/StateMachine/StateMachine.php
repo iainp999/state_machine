@@ -24,10 +24,11 @@ class StateMachine implements StateMachineInterface {
 
   /**
    * @param StateEngineInterface $engine
+   * @param null $current_state
    */
-  function __construct(StateEngineInterface $engine) {
+  function __construct(StateEngineInterface $engine, $current_state = NULL) {
     $this->setStateEngine($engine);
-    $this->state = $engine->getInitialState();
+    $this->state = $current_state == NULL ? $engine->getInitialState() : $current_state;
   }
 
   /**
