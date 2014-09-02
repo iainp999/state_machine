@@ -1,5 +1,5 @@
 {
-    "name": "iainp999/StateMachine",
+    "name": "iainp999/state-machine",
     "description": "Very simple state machine",
     "keywords": ["state machine"],
     "type": "library",
