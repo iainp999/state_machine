@@ -51,6 +51,10 @@ class StateEngine implements StateEngineInterface {
    * @return mixed
    */
   public function checkTransition(StateMachineInterface $entity, $target_state) {
+    if ($entity->currentState() == $target_state) {
+      return TRUE;
+    }
+
     if (!empty($this->transitions[$entity->currentState()])) {
       if (in_array($target_state, $this->transitions[$entity->currentState()])) {
         return TRUE;
